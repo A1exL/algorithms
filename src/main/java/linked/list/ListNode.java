@@ -30,7 +30,7 @@ public class ListNode {
     public String toString() {
         StringBuilder result = new StringBuilder("[ ");
         ListNode node = this;
-        while (null != node) {
+        while (null != node && result.length() < 512) {
             result.append(node.val).append(' ');
             node = node.next;
         }
