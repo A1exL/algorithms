@@ -1,4 +1,6 @@
-package reverse.linked.list;
+package linked.list.reverse;
+
+import linked.list.ListNode;
 
 // https://leetcode.com/problems/reverse-linked-list/
 class ReverseLinkedList {

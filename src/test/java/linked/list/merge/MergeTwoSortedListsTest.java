@@ -1,8 +1,10 @@
-package merge.two.sorted.lists;
+package linked.list.merge;
 
+import linked.list.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static linked.list.ListNode.listNode;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MergeTwoSortedListsTest {
 
@@ -19,18 +21,4 @@ class MergeTwoSortedListsTest {
         assertEquals("[ 1 2 3 4 5 ]", result3.toString());
     }
 
-    private ListNode listNode(int... values) {
-        ListNode first = null;
-        ListNode last = null;
-        for (int value : values) {
-            ListNode newNode = new ListNode(value);
-            if (null == first) {
-                first = newNode;
-            } else {
-                last.next = newNode;
-            }
-            last = newNode;
-        }
-        return first;
-    }
 }

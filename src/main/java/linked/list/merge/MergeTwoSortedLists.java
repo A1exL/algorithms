@@ -1,4 +1,7 @@
-package merge.two.sorted.lists;
+package linked.list.merge;
+
+
+import linked.list.ListNode;
 
 // https://leetcode.com/problems/merge-two-sorted-lists/
 class MergeTwoSortedLists {
